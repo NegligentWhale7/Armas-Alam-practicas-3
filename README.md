@@ -6,6 +6,9 @@
 - [Repositorio de Astro](https://github.com/NegligentWhale7/Astro-Sitio-SO)
 - [Sitio en Netlify](https://keen-conkies-b0f92f.netlify.app/)
 
+## Práctica 5:
+- [Sitio en vercel](https://astro-sitio-so.vercel.app/)
+
 
 ![Alam](Images/alam.jpg)
 
