@@ -10,7 +10,7 @@
 - [Sitio en vercel](https://astro-sitio-so.vercel.app/)
 
 ## Práctica 6, 7 y 8:
-- [Base de datos](/Armas-Alam-practicas-3/Base%20de%20datos/BD.md)
+- [Base de datos](Base_datos/BD.md)
 
 
 ![Alam](Images/alam.jpg)
