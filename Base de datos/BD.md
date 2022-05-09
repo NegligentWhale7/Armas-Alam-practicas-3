@@ -20,7 +20,7 @@
     - Nombre del item (UQ)
 
 - Usuario
-    - Id de usuario (PK)
+    - Usuario_id (PK)
     - Nombre del usuario (UQ)
     - Foto de perfil 
 
@@ -31,7 +31,7 @@
     - Películas
 
 - Estado (CAT)
-    - Estado_id
+    - Estado_id (PK)
     - Finalizado
     - En proceso
     - En espera
@@ -45,3 +45,5 @@
 - Los **items** tienen **carátula** (1 - 1)
 - El **usuario** establece un **estado** (1 - 1)
 - Los **items** tienen un **estado** (1 - 1)
+
+## [🔙 Pagina principal](../README.md)
