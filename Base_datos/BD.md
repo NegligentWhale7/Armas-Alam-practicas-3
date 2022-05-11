@@ -4,25 +4,22 @@
 - Items
 - Categorías (CAT)
 - Usuario
-- Carátula
 - Estado (CAT)
 
 ## Atributos:
 - Items:
     - item_id (PK)
-    - Carátula (FK)
+    - Nombre del item
+    - Imagen
     - Categoría (CAT)
     - Estado (CAT)
-
-- Carátula:
-    - Carátula_id (PK)
-    - Imagen
-    - Nombre del item (UQ)
 
 - Usuario
     - Usuario_id (PK)
     - Nombre del usuario (UQ)
-    - Foto de perfil 
+    - Foto de perfil
+    - Contraseña
+    - Número de teléfono (UQ)
 
 - Categorías (CAT):
     - Categorías_id (PK)
@@ -41,8 +38,6 @@
 - El **usuario** agrega **items** (1 - M)
 - El **usuario** establece una **categoría** (1 - 1)
 - Los **items** tienen **categorías** (1 - 1)
-- El **usuario** agrega **carátula** (1 - 1)
-- Los **items** tienen **carátula** (1 - 1)
 - El **usuario** establece un **estado** (1 - 1)
 - Los **items** tienen un **estado** (1 - 1)
 
