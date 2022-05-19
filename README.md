@@ -12,6 +12,8 @@
 ## Práctica 6, 7 y 8:
 - [Base de datos](Base_datos/BD.md)
 
+## [Lógica, DER y reglas](Base_datos/Logic_DER_Rules.md)
+
 
 ![Alam](Images/alam.jpg)
 
