@@ -17,6 +17,7 @@
 - User
     - User_id (PK)
     - User Name (UQ)
+    - User email (UQ)
     - Profile picture
     - Password
     - Phone number (UQ)
@@ -52,6 +53,7 @@
     - Read user data
     - Update user data
     - Update user password
+    - Update user email
     - Update profile picture
     - Delete user
 
@@ -77,5 +79,6 @@
     - Update the status of an item
     - Delete a status
     - Delete the status of an item 
+## [Corrida de datos](Corrida_Datos.xlsx)
 
 # [🔙](../README.md)

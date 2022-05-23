@@ -12,8 +12,9 @@
 ## Práctica 6, 7 y 8:
 - [Base de datos](Base_datos/BD.md)
 
-## [Lógica, DER y reglas](Base_datos/Logic_DER_Rules.md)
-
+## 4to Parcial:
+- [Lógica, DER y reglas](Base_datos/Logic_DER_Rules.md)
+- [Corrida de datos](Base_datos/Corrida_Datos.xlsx)
 
 ![Alam](Images/alam.jpg)
 
