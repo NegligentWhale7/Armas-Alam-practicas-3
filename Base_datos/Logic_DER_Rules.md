@@ -33,7 +33,13 @@
     - Finished
     - On going
     - On waiting
-    
+
+- Rating (CAT):
+    - Rating_id (PK)
+    - Great
+    - Good
+    - Ok
+    - Never again
 
 ## Relationships:
 - The **user** adds **items** (1 - M)

@@ -11,6 +11,11 @@ CREATE TABLE category(
     category_name VARCHAR(50) NOT NULL
 ) Engine = InnoDB DEFAULT CHARSET = utf8mb4;
 
+CREATE TABLE rating(
+    rating_id INTEGER UNSIGNED PRIMARY KEY,
+    rating_name VARCHAR(50) NOT NULL
+) Engine = InnoDB DEFAULT CHARSET = utf8mb4;
+
 CREATE TABLE users(
     user_id VARCHAR(50) PRIMARY KEY,
     user_name VARCHAR(250) UNIQUE NOT NULL,
@@ -37,6 +42,11 @@ CREATE TABLE item(
     categoryT INTEGER UNSIGNED,
     FOREIGN KEY (categoryT)
         REFERENCES category (category_id)
+        ON DELETE RESTRICT
+        ON UPDATE CASCADE,
+    ratingT INTEGER UNSIGNED,
+    FOREIGN KEY (ratingT)
+        REFERENCES rating (rating_id)
         ON DELETE RESTRICT
         ON UPDATE CASCADE
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
