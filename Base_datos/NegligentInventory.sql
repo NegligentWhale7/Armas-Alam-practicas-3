@@ -1,10 +1,11 @@
 CREATE DATABASE IF NOT EXISTS NegligentInventory;
 USE NegligentInventory;
 
-CREATE TABLE status(
+CREATE TABLE status_item(
     status_id INTEGER UNSIGNED PRIMARY KEY,
     status_name VARCHAR(50) NOT NULL
 ) Engine = InnoDB DEFAULT CHARSET = utf8mb4;
+
 CREATE TABLE category(
     category_id INTEGER UNSIGNED PRIMARY KEY,
     category_name VARCHAR(50) NOT NULL
@@ -23,18 +24,18 @@ CREATE TABLE item(
     item_id INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     item_name VARCHAR(60) NOT NULL,
     item_image VARCHAR(250) NOT NULL,
-    user VARCHAR (50) NOT NULL,
-    FOREIGN KEY (user)
-        REFERENCES users(user)
+    userT VARCHAR (50) NOT NULL,
+    FOREIGN KEY (userT)
+        REFERENCES users(user_id)
         ON DELETE RESTRICT
         ON UPDATE CASCADE,
-    status INTEGER UNSIGNED,
-    FOREIGN KEY (status)
-        REFERENCES status (status_id)
+    statusT INTEGER UNSIGNED,
+    FOREIGN KEY (statusT)
+        REFERENCES status_item (status_id)
         ON DELETE RESTRICT
         ON UPDATE CASCADE,
-    category INTEGER UNSIGNED,
-    FOREIGN KEY (category)
+    categoryT INTEGER UNSIGNED,
+    FOREIGN KEY (categoryT)
         REFERENCES category (category_id)
         ON DELETE RESTRICT
         ON UPDATE CASCADE
