@@ -72,19 +72,26 @@
 
 - Category:
     - Create a category
-    - Create a category for an item
-    - Read the category of an item
-    - Update the category of an item
-    - Delete the category of an item
+    - Read all the categories
+    - Read a category
+    - Update a category
     - Delete a category
 
 - Status:
     - Create a status
-    - Create a status for an item
-    - Read the status of an item
-    - Update the status of an item
+    - Read all the status
+    - Read a status
+    - Update a status
     - Delete a status
-    - Delete the status of an item 
+
+- Rating:
+    - Create a rating
+    - Read all the ratings
+    - Read a rating
+    - Update a rating
+    - Delete a rating
+    
+
 ## [Corrida de datos](Corrida_Datos.xlsx)
 
 # [🔙](../README.md)
