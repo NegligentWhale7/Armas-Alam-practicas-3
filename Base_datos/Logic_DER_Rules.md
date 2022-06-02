@@ -59,8 +59,6 @@
     - Read user data
     - Update user data
     - Update user password
-    - Update user email
-    - Update profile picture
     - Delete user
 
 - Item:
