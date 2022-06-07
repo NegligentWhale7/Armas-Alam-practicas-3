@@ -15,6 +15,8 @@
 ## 4to Parcial:
 - [Lógica, DER y reglas](Base_datos/Logic_DER_Rules.md)
 - [Corrida de datos](Base_datos/Corrida_Datos.xlsx)
+- [Base de datos](Base_datos/NegligentInventory.sql)
+- [CRUD](Base_datos/NegligentInventory_crud.sql)
 
 ![Alam](Images/alam.jpg)
 

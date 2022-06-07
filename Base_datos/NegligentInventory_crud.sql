@@ -29,7 +29,7 @@ DELETE FROM status_item WHERE status_name = "Finished";
 
 /*- Rating:
     - Create a rating*/
-INSERT INTO rating (rating_id, rating_name) VALUES (1, "Great"), (2, "Good"), (3, "Ok"), (4, "Never again");
+INSERT INTO rating (rating_id, rating_name) VALUES (1, "Great"), (2, "Good"), (3, "Ok"), (4, "Never again"), (5, "To See");
     /*- Read all the ratings*/
 SELECT * FROM rating;
     /*- Read a rating*/
@@ -103,6 +103,23 @@ INSERT INTO item (item_name, item_image, userT, statusT, categoryT, ratingT) VAL
     1,
     1,
     1
+),
+(
+    "El Mago de los Huesos",
+    "https://assets.espaebook2.com/b/F.%20E.%20Higging/El%20mago%20de%20los%20huesos%20(1088)/big.jpg",
+    "MariaD",
+    2,
+    3,
+    4
+),
+(
+    "Shrek 2",
+    "https://www.new-video.de/co/rc/r.shrek2.jpg",
+    "MariaD",
+    1,
+    2,
+    1
+
 );
     /*- Read item info*/
 SELECT * FROM item;
@@ -115,4 +132,4 @@ UPDATE item SET
     categoryT = 1
     WHERE userT = "Lupep";
     /*- Delete item*/
-
+DELETE FROM item WHERE item_name = "Persona 5";

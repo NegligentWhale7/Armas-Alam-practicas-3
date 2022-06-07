@@ -13,6 +13,7 @@
     - Image
     - Category (CAT)
     - Status (CAT)
+    - Rating (CAT)
 
 - User
     - User_id (PK)
@@ -40,6 +41,7 @@
     - Good
     - Ok
     - Never again
+    - To See
 
 ## Relationships:
 - The **user** adds **items** (1 - M)
@@ -47,6 +49,8 @@
 - The **items** have **categories** (1 - 1)
 - The **user** stablish a **status** (1 - 1)
 - The **items** have a **status** (1 - 1)
+- The **user** stablish a **rating** (1 - 1)
+- The **items** have a **rating** (1 - 1)
 
 ---
 # Entity Relationship Diagram

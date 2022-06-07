@@ -5,16 +5,19 @@ CREATE TABLE status_item(
     status_id INTEGER UNSIGNED PRIMARY KEY,
     status_name VARCHAR(50) NOT NULL
 ) Engine = InnoDB DEFAULT CHARSET = utf8mb4;
+INSERT INTO status_item (status_id, status_name) VALUES (1, "Finished"), (3, "On Going"), (2, "On Waiting");
 
 CREATE TABLE category(
     category_id INTEGER UNSIGNED PRIMARY KEY,
     category_name VARCHAR(50) NOT NULL
 ) Engine = InnoDB DEFAULT CHARSET = utf8mb4;
+INSERT INTO category (category_id, category_name) VALUES (1, "Videogames"), (2, "Movies"), (3, "Books");
 
 CREATE TABLE rating(
     rating_id INTEGER UNSIGNED PRIMARY KEY,
     rating_name VARCHAR(50) NOT NULL
 ) Engine = InnoDB DEFAULT CHARSET = utf8mb4;
+INSERT INTO rating (rating_id, rating_name) VALUES (1, "Great"), (2, "Good"), (3, "Ok"), (4, "Never again"), (5, "To See");
 
 CREATE TABLE users(
     user_id VARCHAR(50) PRIMARY KEY,
