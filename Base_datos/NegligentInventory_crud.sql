@@ -60,6 +60,23 @@ INSERT INTO users (user_id, user_name, email, password, profile_picture, phone) 
 (
     "MariaD", "Maria DataBase", "mariadb@hotmail.com", SHA1("database"), "https://yt3.ggpht.com/a/AATXAJyBEP1dulz01I9JBAQQ68LGZQ0BusDS7lF-3g=s900-c-k-c0xffffffff-no-rj-mo", "5573587111" 
 );
+/*Create all users*/
+INSERT INTO users (user_id, user_name, email, password, profile_picture, phone) VALUES 
+(
+    "Panfilop", "Pánfilo Pérez", "pperez@gmail.com", SHA1("contraseña"), "https://yt3.ggpht.com/a/AATXAJyBEP1dulz01I9JBAQQ68LGZQ0BusDS7lF-3g=s900-c-k-c0xffffffff-no-rj-mo", "5512345678"
+),
+(
+    "Pedrom", "Pedro Morales", "pedromoralesc@gmail.com", SHA1("Rias"), "https://yt3.ggpht.com/a/AATXAJyBEP1dulz01I9JBAQQ68LGZQ0BusDS7lF-3g=s900-c-k-c0xffffffff-no-rj-mo", "5572187020" 
+),
+(
+    "Lupep", "Lupe Paredes", "lparedes@htomail.com", SHA1("pikachu"), "https://yt3.ggpht.com/a/AATXAJyBEP1dulz01I9JBAQQ68LGZQ0BusDS7lF-3g=s900-c-k-c0xffffffff-no-rj-mo", "5512346652"
+),
+(
+    "ToledoA", "Toledo Amiba", "tamib@gmail.com", SHA1("amibas"), "https://yt3.ggpht.com/a/AATXAJyBEP1dulz01I9JBAQQ68LGZQ0BusDS7lF-3g=s900-c-k-c0xffffffff-no-rj-mo", "5573587050" 
+),
+(
+    "MariaD", "Maria DataBase", "mariadb@hotmail.com", SHA1("database"), "https://yt3.ggpht.com/a/AATXAJyBEP1dulz01I9JBAQQ68LGZQ0BusDS7lF-3g=s900-c-k-c0xffffffff-no-rj-mo", "5573587111" 
+);
     /*- Read user data*/
 SELECT * FROM users;
 SELECT * FROM users WHERE user_id = "Pedrom";
@@ -88,6 +105,49 @@ INSERT INTO item (item_name, item_image, userT, statusT, categoryT, ratingT) VAL
     1
 );
 INSERT INTO item (item_name, item_image, userT, statusT, categoryT, ratingT) VALUES 
+(
+    "Hollow Knight", 
+    "https://newcastlebeach.org/images/hollow-knight-5.jpg",
+    "Lupep",
+    1,
+    3,
+    1
+),
+(
+    "Fable II", 
+    "https://www.soundtrack.net/img/album/24120.jpg",
+    "ToledoA",
+    1,
+    1,
+    1
+),
+(
+    "El Mago de los Huesos",
+    "https://assets.espaebook2.com/b/F.%20E.%20Higging/El%20mago%20de%20los%20huesos%20(1088)/big.jpg",
+    "MariaD",
+    2,
+    3,
+    4
+),
+(
+    "Shrek 2",
+    "https://www.new-video.de/co/rc/r.shrek2.jpg",
+    "MariaD",
+    1,
+    2,
+    1
+
+);
+/*Insert all items*/
+INSERT INTO item (item_name, item_image, userT, statusT, categoryT, ratingT) VALUES 
+(
+    "Persona 5", 
+    "https://media.vandal.net/m/69251/persona-5-royal-20202211626933_1.jpg",
+    "Panfilop",
+    1,
+    1,
+    1
+),
 (
     "Hollow Knight", 
     "https://newcastlebeach.org/images/hollow-knight-5.jpg",
